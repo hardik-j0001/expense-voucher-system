@@ -103,6 +103,3 @@ npm run seed
 - employeeSignature, directorSignature, rejectionReason, approvalDate
 - employeeId, directorId, timestamps
 
-## License
-
-This project is confidential and proprietary to Prachay Securities Private Limited.
