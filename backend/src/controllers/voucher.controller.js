@@ -101,6 +101,10 @@ exports.createVoucher = async (req, res) => {
     const createdVoucher = await getVoucherWithAssociations(voucher.id);
     res.status(201).json({ success: true, voucher: createdVoucher });
   } catch (error) {
+    if (error.name === 'SequelizeValidationError' || error.name === 'SequelizeUniqueConstraintError') {
+      const messages = error.errors ? error.errors.map(e => e.message).join(', ') : error.message;
+      return res.status(400).json({ success: false, message: messages });
+    }
     res.status(500).json({ success: false, message: error.message });
   }
 };
