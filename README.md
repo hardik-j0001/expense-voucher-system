@@ -3,6 +3,8 @@
 A full-stack web application designed to digitize and streamline the lifecycle of employee expense vouchers — from creation and digital signature upload to director approval and accounting review.
 
 ---
+# 🎥Demo Video
+https://github.com/user-attachments/assets/e92bd78a-a905-4bac-b7ef-a9fa4b5e1c92
 
 ## Table of Contents
 
